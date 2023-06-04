@@ -12,6 +12,7 @@ private:
 
 public:
     Node();
+    ~Node();    //destructure
     void set_data(int data);
     int get_data();
 
@@ -24,6 +25,7 @@ public:
 
     //insertion method
     friend void insert_to(Node* root, int value);
+
 
 };
 

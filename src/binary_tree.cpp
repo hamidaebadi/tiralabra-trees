@@ -2,6 +2,10 @@
 #include "../headers/binary_tree.hpp"
 
 Node::Node(){std::cout << "Binary tree node is created" <<std::endl;}
+Node::~Node(){
+    delete left_child_;
+    delete right_child_;
+}
 
 void Node::set_data(int data){
     data_ = data;

@@ -13,11 +13,8 @@ int main(){
 
     Node *left_child = root->get_left_child();
 
-    if(left_child == nullptr){
-        std::cout << "left_child is null" << std::endl;
-        return 0;
-    }
+
     std::cout << "The value of left child of root node is: " << left_child->get_data() << std::endl;
-    
+    delete root;
     return 0;
 }
