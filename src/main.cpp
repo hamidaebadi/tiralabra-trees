@@ -4,17 +4,16 @@
 int main(){
     std::cout << "Creating a node" << std::endl;
 
-    Node* root = new Node();
-    root->set_data(10);
+    BSTNode* root = new BSTNode(10);
     
 
-    std::cout << "Inserting value 5 into the left child of root " << std::endl; 
-    insert_to(root, 5);
+    bst_insert_to(root, 5);
+    bst_insert_to(root, 15);
+    bst_insert_to(root, 8);
+    bst_insert_to(root, 4);
+    bst_insert_to(root, 3);
 
-    Node *left_child = root->get_left_child();
-
-
-    std::cout << "The value of left child of root node is: " << left_child->get_data() << std::endl;
+    bst_search(root, 8);
     delete root;
     return 0;
 }
