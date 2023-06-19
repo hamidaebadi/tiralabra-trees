@@ -32,6 +32,8 @@ public:
     //searching method
     friend bool bst_search(BSTNode* root, int value);
 
+    friend void bst_inorder_traversal(BSTNode* root);
+
 
 };
 

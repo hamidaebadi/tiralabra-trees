@@ -13,7 +13,7 @@ int main(){
     bst_insert_to(root, 4);
     bst_insert_to(root, 3);
 
-    bst_search(root, 8);
+    bst_inorder_traversal(root);
     delete root;
     return 0;
 }

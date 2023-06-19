@@ -53,3 +53,11 @@ bool bst_search(BSTNode* root, int value){
         bst_search(root->get_right_child(), value);
     }
 }
+
+void bst_inorder_traversal(BSTNode* root){
+    if(root != nullptr){
+        bst_inorder_traversal(root->get_left_child());
+        std::cout << root->get_data() << " " <<std::flush;
+        bst_inorder_traversal(root->get_right_child());
+    }
+}
